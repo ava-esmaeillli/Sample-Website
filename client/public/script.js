@@ -14,20 +14,4 @@ window.onload = function () {
             }
         });
     });
-
-    const sidebarLabels = document.querySelectorAll(".sidebarLabels");
-    const sidebarContents = document.querySelectorAll(".sidebarContents");
-
-    sidebarContents.forEach((content) => {
-        content.style.display = "none";
-    });
-
-    sidebarLabels.forEach((label, index) => {
-        label.addEventListener("click", () => {
-            sidebarContents.forEach((content) => {
-                content.style.display = "none";
-            });
-            sidebarContents[index].style.display = "flex";
-        });
-    });
 };
