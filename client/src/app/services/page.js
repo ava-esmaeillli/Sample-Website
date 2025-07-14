@@ -3,6 +3,24 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Services() {
+    const aLLServices = [
+        "پاسخگویی سریع دقیق به کامنت‌ها",
+        "افزایش تعامل و رضایت کاربران",
+        "مدیریت نظرات و سوالات بدون صرف زمان",
+        "ابزار کاربردی مدیریت صفحه اینستاگرام",
+        "بهبود ارتباط با مخاطبان و ارتقاء تجربه کاربری",
+        "کمک به رشد و موفقیت صفحه اینستاگرام",
+    ];
+
+    const detailServices = [
+        "جذب فالوور برای رشد سریع کسب‌وکار",
+        "جذب فالوور واقعی و مرتبط با حوزه کاری",
+        "ربات هوشمند با تمرکز بر نیازهای کسب‌وکار",
+        "کیفیت بالای جذب فالوور",
+        "کاهش هزینه و افزایش بازدهی در جذب مخاطب",
+        "گسترش جامعه مخاطبان هدف و پیشرفت",
+    ];
+
     return (
         <>
             <Header />
@@ -30,30 +48,14 @@ export default function Services() {
                         </p>
                     </div>
                     <ul>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>پاسخگویی سریع
-                            و دقیق به کامنت‌ها
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>افزایش تعامل
-                            و رضایت کاربران
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>مدیریت نظرات
-                            و سوالات بدون صرف زمان
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>ابزار کاربردی
-                            مدیریت صفحه اینستاگرام
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>بهبود ارتباط
-                            با مخاطبان و ارتقاء تجربه کاربری
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>کمک به رشد و
-                            موفقیت صفحه اینستاگرام
-                        </li>
+                        {aLLServices.map((element, index) => {
+                            return (
+                                <li key={index}>
+                                    <i className="bx bxs-check-circle"></i>
+                                    {element}
+                                </li>
+                            );
+                        })}
                     </ul>
                 </section>
 
@@ -83,50 +85,19 @@ export default function Services() {
                     </div>
                     <img src="/assets/img/pic 4.png" />
                     <ul>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>جذب فالوور
-                            برای رشد سریع کسب‌وکار
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>جذب فالوور
-                            واقعی و مرتبط با حوزه کاری
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>ربات هوشمند
-                            با تمرکز بر نیازهای کسب‌وکار
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>کیفیت بالای
-                            جذب فالوور
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>کاهش هزینه و
-                            افزایش بازدهی در جذب مخاطب
-                        </li>
-                        <li>
-                            <i className="bx bxs-check-circle"></i>گسترش جامعه
-                            مخاطبان هدف و پیشرفت
-                        </li>
+                        {detailServices.map((element, index) => {
+                            return (
+                                <li key={index}>
+                                    <i className="bx bxs-check-circle"></i>
+                                    {element}
+                                </li>
+                            );
+                        })}
                     </ul>
                 </section>
 
                 <section className="part3">
                     <h2>ارتباط با ما</h2>
-                    <form>
-                        <label htmlFor="name">
-                            <h3>نام و نام خانوادگی:</h3>
-                            <input type="text" name="name" />
-                        </label>
-                        <label htmlFor="email">
-                            <h3>ایمیل:</h3>
-                            <input type="email" name="email" />
-                        </label>
-                        <label htmlFor="message">
-                            <h3>متن پیام:</h3>
-                            <textarea name="message" rows="5"></textarea>
-                        </label>
-                        <input type="submit" name="submit" value="ارسال" />
-                    </form>
                     <img src="/assets/img/contact 1.png" />
                 </section>
             </article>
